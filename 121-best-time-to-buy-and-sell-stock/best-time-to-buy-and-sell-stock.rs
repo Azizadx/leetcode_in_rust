@@ -1,4 +1,5 @@
 impl Solution {
+    #[inline]
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         let mut min_price = i32::MAX;
         let mut max_profit = 0;
