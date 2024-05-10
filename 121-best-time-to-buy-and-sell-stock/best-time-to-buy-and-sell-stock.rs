@@ -8,7 +8,7 @@ impl Solution {
                 min_price = price;
                 continue;
             }
-           max_profit = max_profit.max(price - min_price);
+            max_profit = max_profit.max(price - min_price);
         }
 
         max_profit
