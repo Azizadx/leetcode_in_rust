@@ -28,10 +28,11 @@ impl Solution {
         true
     }
     // helper functions
-
+    #[inline]
     fn is_alphanumeric(c: char) -> bool {
         (c >= 'a' && c<='z') ||  (c >= 'A' && c<='Z') ||  (c >= '0' && c<='9')
     }
+    #[inline]
     fn is_lowercase(c: char) -> char {
         if c >= 'A' && c <= 'Z' {
             return (c as u8 + 32) as char;
