@@ -6,14 +6,9 @@ impl Solution {
         for price in prices {
             if price < min_price {
                 min_price = price;
+                continue;
             }
-            else {
-                let profit = price - min_price;
-
-                if profit > max_profit {
-                    max_profit = profit;
-                }
-            }
+           max_profit = max_profit.max(price - min_price);
         }
 
         max_profit
