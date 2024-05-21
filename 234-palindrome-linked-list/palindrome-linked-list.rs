@@ -4,13 +4,11 @@ impl Solution {
 
         let mut values = Vec::new();
         let mut current = &head; // reference to head of linked list
-
         // traverses the linked list.
         while let Some(node) = current {
             values.push(node.val);
             current = &node.next;
         }
-
         // Check if the values form a palindrome
         let len = values.len();//length of the vector 
         //loop over the 1st half
